@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آمازون دات کام - کمتر خرج کن، بیشتر لبخند بزن</title>
+    <link rel="stylesheet" href="styles/fontiran.css"/>
+    <link rel="stylesheet" href="styles/v4-font-face.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+<div id="blackbackall" class="hide"></div>
+<!-- Menu -->
+<div id="menuAll">
+    <a class="hello" href="#">
+        <div class="avatar"></div>
+        <span>خوش آمدید، وارد شوید.</span>
+    </a>
+    <div id="scrollMenu" class="show">
+        <ul>
+            <li class="title">دستگاه ها و محتوای دیجیتال</li>
+            <li onclick="showMenuDetails(0)">آمازون موزیک<div class="sign"></div>
+                <ul id="detailsMenu" class="hide">
+                    <li class="menuback" ondblclick="close2()">
+                        <div class="backsign"></div>
+                        منوی اصلی
+                    </li>
+                    <div class="line"></div>
+                    <li class="title">پخش موزیک</li>
+                    <li>پخش موزیک رایگان</li>
+                    <li>پادکست</li>
+                    <li>باز کردن وب پلیر</li>
+                    <li>دانلود نرم افزار</li>
+                </ul>
+            </li>
+            <li onclick="showMenuDetails(1)">کتابخوان الکترونیکی کیندل<div class="sign"></div>
+                <ul id="detailsMenu" class="hide">
+                    <li class="menuback" ondblclick="close2()">
+                        <div class="backsign"></div>
+                        منوی اصلی
+                    </li>
+                    <div class="line"></div>
+                    <li class="title">کتابخوان کیندل</li>
+                    <li>کیندل کودکان</li>
+                    <li>کیندل</li>
+                    <li>کیندل پیپروایت</li>
+                    <li>کیندل اوآسیس</li>
+                    <li>لوازم جانبی</li>
+                    <li>دیدن الباقی کیندل ها</li>
+                    <div class="line"></div>
+                    <li class="title">فروشگاه کیندل</li>
+                    <li>کیندل کتاب</li>
+                    <li>کیندل نامحدود</li>
+                    <li>خواندن پرایم</li>
+                    <li>کیندل ولا</li>
+                    <div class="line"></div>
+                    <li class="title">برنامه ها و منابع</li>
+                    <li>نرم افزار کیندل رایگان</li>
+                    <li>کیندل ابری</li>
+                    <li>مدیریت محتوا و دستگاه</li>
+                </ul>
+            </li>
+            <li onclick="showMenuDetails(2)">اپ استور برای اندروید<div class="sign"></div>
+                <ul id="detailsMenu" class="hide">
+                    <li class="menuback" ondblclick="close2()">
+                        <div class="backsign"></div>
+                        منوی اصلی
+                    </li>
+                    <div class="line"></div>
+                    <li class="title">اپ استور اندروید</li>
+                    <li>تمام برنامه ها و بازی ها</li>
+                    <li>بازی ها</li>
+                    <li>آمازون کوین</li>
+                    <li>دانلود آمازون اپ استور</li>
+                    <li>آمازون اپ</li>
+                    <li>برنامه و اشتراک های شما</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="line"></div>
+        <ul>
+            <li class="title">بخش فروشگاهی</li>
+            <li>الکترونیک<div class="sign"></div></li>
+            <li>کامپیوتر<div class="sign"></div></li>
+            <li>خانه هوشمند<div class="sign"></div></li>
+            <li>هنر و صنایع دستی<div class="sign"></div></li>
+        </ul>
+        <div class="line"></div>
+        <ul>
+            <li class="title">برنامه و ویژگی ها</li>
+            <li>کارت هدیه<div class="sign"></div></li>
+            <li>آمازون لایو<div class="sign"></div></li>
+            <li>خرید بین المللی<div class="sign"></div></li>
+        </ul>
+        <div class="line"></div>
+        <ul>
+            <li class="title">راهنما و تنظیمات</li>
+            <li>حساب کاربری شما</li>
+            <li class="nav-items">
+                <div class="globe"></div>
+                فارسی
+            </li>
+            <li class="nav-items">
+                <div class="flag"></div>
+                ایالت متحده آمریکا
+            </li>
+            <li>خدمات پس از فروش</li>
+            <li>ورود</li>
+        </ul>
+    </div>
+
+</div>
+<!-- HEADER -->
+<header id="header">
+    <div id="top-menu">
+        <div id="holder-top">
+            <div class="nav right">
+                <div class="items">
+                    <div class="logo"></div>
+                </div>
+                <div class="items country">
+                    <div class="location"></div>
+                    <div class="text">
+                        <span>ارسال به</span>
+                        <h4>ایالت متحده آمریکا</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="nav center">
+                <div id="ListAll" class="nav-float all" onclick="listAllShow()">
+                    لیست
+                    <div class="down"></div>
+                    <div id="allList" class="hide" onmouseover="listAllClose()">
+                        <ul>
+                            <li><a href="#">همه بخش ها</a></li>
+                            <li><a href="#">صنایع دستی</a></li>
+                            <li><a href="#">خودرو</a></li>
+                            <li><a href="#">بچه</a></li>
+                            <li><a href="#">پد مراقبتی</a></li>
+                            <li><a href="#">کتاب</a></li>
+                            <li><a href="#">مد پسرانه</a></li>
+                            <li><a href="#">کامپیوتر</a></li>
+                            <li><a href="#">معاملات</a></li>
+                            <li><a href="#">موسیقی دیجیتال</a></li>
+                            <li><a href="#">الکترونیک</a></li>
+                            <li><a href="#">مد دخترانه</a></li>
+                            <li><a href="#">لوازم بهداشتی</a></li>
+                            <li><a href="#">لوازم آشپزخانه</a></li>
+                            <li><a href="#">لوازم صنعتی</a></li>
+                            <li><a href="#">فروشگاه کیندل</a></li>
+                            <li><a href="#">لوازم مسافرتی</a></li>
+                            <li><a href="#">مد مردانه</a></li>
+                            <li><a href="#">فیلم های تلویزیونی</a></li>
+                            <li><a href="#">لوازم موسیقی</a></li>
+                            <li><a href="#">لوازم حیوان خانگی</a></li>
+                            <li><a href="#">لوازم ویدیویی</a></li>
+                            <li><a href="#">نرم افزار</a></li>
+                            <li><a href="#">لوازم ورزشی</a></li>
+                            <li><a href="#">لوازم خانگی</a></li>
+                            <li><a href="#">اسباب بازی</a></li>
+                            <li><a href="#">بازی های ویدیویی</a></li>
+                            <li><a href="#">مد زنانه</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <input class="nav-float" type="search"/>
+                <div class="nav-float search"></div>
+            </div>
+            <div class="nav left">
+                <div id="flag1" class="items flag" onmouseover="show()">
+                    <div class="down"></div>
+                    <div class="flag-us"></div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <span>تغییر زبان</span>
+                                <a href="#" class="more">اطلاعات بیشتر</a>
+                            </li>
+                            <li>
+                               <div class="radio-up"></div>
+                               <label>انگلیسی - EN</label>
+                            </li>
+                        </ul>
+                        <div class="line"></div>
+                    
+                        <ul>
+                            <li>
+                                <div class="radio"></div>
+                                <a href="#">اسپانیایی - ES</a>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <a href="#">عربی - AR</a>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <a href="#">آلمانی - DE</a>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <a href="#">فرانسوی - FR</a>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <a href="#">اسپانیایی - ES</a>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <a href="#">عربی - AR</a>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <a href="#">آلمانی - DE</a>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <a href="#">فرانسوی - FR</a>
+                            </li>
+                        </ul>
+                        
+                        <div class="line"></div>
+                        <ul>
+                            <li>
+                                <span>تغییر ارز</span>
+                                <a href="#" class="more">اطلاعات بیشتر</a>
+                            </li>
+                            <li>
+                                <span>IRR - IRR - ریال ایران</span>
+                                <a href="#" class="more change1">تغییرات</a>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                    <div class="shapeup"></div>
+                </div>
+                <div id="account1" class="items account" onmouseover="show()">
+                    <div class="text">
+                        <span>درود، وارد شوید</span>
+                        <h4>لیست و حسابها</h4>
+                        <div class="menu">
+                            <a href="#" class="btn">وارد شوید</a>
+                            <div class="text1">
+                            <span>مشتری جدید هستید؟ </span><a href="#">از اینجا شروع کنید</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="lists1">
+                                <h5>لیست های شما</h5>
+                                <ul>
+                                    <li><a href="#">ساخت لیست</a></li>
+                                    <li><a href="#">پیدا کردن لیست یا ثبت آن</a></li>
+                                    <li><a href="#">لیست خیریه آمازون اسمایل</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="lists1 line2">
+                                <h5>اکانت شما</h5>
+                                <ul>
+                                    <li><a href="#">اکانت</a></li>
+                                    <li><a href="#">درخواست ها</a></li>
+                                    <li><a href="#">پیشنهادات</a></li>
+                                    <li><a href="#">تاریخچه مرورگر</a></li>
+                                    <li><a href="#">فهرست تماشا</a></li>
+                                    <li><a href="#">خرید و اجاره ویدیو</a></li>
+                                    <li><a href="#">کیندل نامحدود</a></li>
+                                    <li><a href="#">محتواها و دستگاه ها</a></li>
+                                    <li><a href="#">اشتراک و ذخیره آیتم ها</a></li>
+                                    <li><a href="#">اشتراک و عضویت</a></li>
+                                    <li><a href="#">لیست آهنگ ها</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shapeup"></div>
+                    </div>
+                    <div class="down"></div>
+                </div>
+                <div class="items order">
+                    <div class="text">
+                        <span>برگشتی ها</span>
+                        <h4>و سفارشات</h4>
+                    </div>
+                </div>
+                <div class="items cart">
+                    <div class="cart-us"></div>
+                    <div class="text">سبد کالا</div>
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-menu">
+        <div class="holder-bottom">
+            <div class="nav right">
+                <div class="items all" onclick="listOn()">
+                    <div class="icon"></div>
+                    <span>دسته بندی</span>
+                </div>
+            </div>
+            <div class="nav left">
+                <div class="items">
+                    <span>معاملات امروز</span>
+                </div>
+                <div class="items">
+                    <span>خدمات پس از فروش</span>
+                </div>
+                <div class="items">
+                    <span>ثبت نام</span>
+                </div>
+                <div class="items">
+                    <span>کارت هدیه</span>
+                </div>
+                <div class="items">
+                    <span>همکاری در فروش</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="blackback" class="hide"></div>
+
+<!-- CONTENT -->
+<section id="content">
+        <div id="nav-one">
+            <div class="items">
+                <div class="header">لوازم جانبی بازی</div>
+                <div class="item-model-one">
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Headsets.jpg" alt=""/></a>
+                        <a href="#" class="text">هدست</a>
+                    </div>
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Keyboards.jpg" alt=""/></a>
+                        <a href="#" class="text">کیبورد</a>
+                    </div>
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Computer mice.jpg" alt=""/></a>
+                        <a href="#" class="text">ماوس کامپیوتر</a>
+                    </div>
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Chairs.jpg" alt=""/></a>
+                        <a href="#" class="text">صندلی</a>
+                    </div>
+                    <a href="#" class="continue">جزئیات بیشتر</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">خرید براساس</div>
+                <div class="item-model-two">
+                    <div class="items">
+                        <a href="#" class="pic pic1"><img src="img/bg/Computers.png" alt=""/></a>
+                        <a href="#" class="text">کامپیوتر<br>و لوازم جانبی</a>
+                    </div>
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Video_Games.png" alt=""/></a>
+                        <a href="#" class="text">بازی ویدیویی</a>
+                    </div>
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Baby.png" alt=""/></a>
+                        <a href="#" class="text">لوازم کودک</a>
+                    </div>
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Toys.png" alt=""/></a>
+                        <a href="#" class="text">بازی<br>و اسباب بازی</a>
+                    </div>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">لوازم بهداشتی</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Health & Personal Care.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="signin">
+                    <div class="header">برای بهترین تجربه ها کلیک کنید</div>
+                    <a href="#" class="btn">با خیال راحت وارد شوید</a>
+                </div>
+                <a href="#" class="ad"><img src="img/bg/ad.jpg" alt=""/></a>
+            </div>
+            <div class="items">
+                <div class="header">معاملات و تبلیغات</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Deals & Promotions.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">لوازم آرایشی</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Beauty.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">کامپیوتر و لوازم جانبی</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/PC.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">لوازم الکترونیکی</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Electronics.jpg" alt=""/></a>
+                    <a href="#" class="continue">جزئیات بیشتر</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">لباس زنانه</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/dress.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MINI SLIDER-->
+        <div id="mini">
+            <p>پُرفروش ترین کتاب ها برای شما</p>
+            <div id="ministyle">
+                <div id="minislider">
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/01.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/02.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/03.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/04.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/05.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/06.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/07.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/08.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/09.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/10.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/11.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/12.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/13.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/14.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/15.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/16.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/17.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/18.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/19.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/20.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/21.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/22.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/23.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/24.jpg"></img>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderTwo/25.jpg"></img>
+                    </div>
+                </div>
+                <div id="minileft"></div>
+                <div id="miniright"></div>
+            </div>
+        </div>
+
+        <!-- NAV TWO -->
+        <div id="nav-two">
+            <div class="items">
+                <div class="header">اسباب بازی های جدید</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Fuji_Dash_Toys_1X.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">کالای بازی</div>
+                <div class="item-model-one">
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Fuji_Quad_Apparel_1x.jpg" alt=""/></a>
+                        <a href="#" class="text">پوشاک</a>
+                    </div>
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Fuji_Quad_Hat_1x.jpg" alt=""/></a>
+                        <a href="#" class="text">کلاه</a>
+                    </div>
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Fuji_Quad_Figure_1x.jpg" alt=""/></a>
+                        <a href="#" class="text">اکشن فیگور</a>
+                    </div>
+                    <div class="items">
+                        <a href="#" class="pic"><img src="img/bg/Fuji_Quad_Mug_1x.jpg" alt=""/></a>
+                        <a href="#" class="text">ماگ</a>
+                    </div>
+                    <a href="#" class="continue">جزئیات بیشتر</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">فروشگاه تبلت و لپ تاپ</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Fuji_Dash_Laptops.jpg" alt=""/></a>
+                    <a href="#" class="continue">جزئیات بیشتر</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">ساخت نورهای دیواری</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Fuji_Dash_StripLighting.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">نیازهای بدنسازی شما</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Fuji_Dash_Fitness_1X.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">فروشگاه ساعت هوشمند</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Fuji_Dash_SmartWatch_1X.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">تبلت کیندل</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Fuji_Desktop_Dash_Kindle_1x.jpg" alt=""/></a>
+                    <a href="#" class="continue">همین حالا خرید کنید</a>
+                </div>
+            </div>
+            <div class="items">
+                <div class="header">خرید لوازم حیوانات خانگی</div>
+                <div class="item-model-three">
+                    <a href="#" class="pic"><img src="img/bg/Fuji_Dash_Pets_1X.jpg" alt=""/></a>
+                    <a href="#" class="continue">جزئیات بیشتر</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDER -->
+        <div id="big-slider">
+            <div id="slider">
+                <div id="galery">
+                    <div class="items">
+                        <img src="img/sliders/sliderOne/01.jpg"/>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderOne/02.jpg"/>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderOne/05.jpg"/>
+                    </div>
+                    <div class="items">
+                        <img src="img/sliders/sliderOne/04.jpg"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="left"></div>
+        <div id="right"></div>
+</section>
+
+<!-- FOOTER -->
+<section id="footer">
+    <div class="signin">
+        <h6>پیشنهادهای شخصی سازی شده خود را ببینید</h6>
+        <a href="#" class="btn">وارد شوید</a>
+        <div class="text">
+            <span>مشتری جدید هستید؟ </span><a href="#">از اینجا شروع کنید</a>
+        </div>
+    </div>
+    <a class="back-top" href="#header">برگشت به بالا</a>
+    <div id="footer-one">
+        <div class="main">
+            <div class="items">
+                <div class="header">با ما بیشتر آشنا شوید</div>
+                <ul class="text">
+                    <li><a href="#">مشاغل</a></li>
+                    <li><a href="#">وبلاگ</a></li>
+                    <li><a href="#">درباره آمازون</a></li>
+                    <li><a href="#">سیاست های سرمایه گذاری</a></li>
+                    <li><a href="#">دستگاه های اجرایی</a></li>
+                    <li><a href="#">دانش بیشتر</a></li>
+                </ul>
+            </div>
+            <div class="items">
+                <div class="header">کسب درآمد با ما</div>
+                <ul class="text">
+                    <li><a href="#">فروش محصولات در آمازون</a></li>
+                    <li><a href="#">فروش در آمازون بیزینس</a></li>
+                    <li><a href="#">فروش نرم افزار در آمازون</a></li>
+                    <li><a href="#">مشارکت در فروش</a></li>
+                    <li><a href="#">محصولات خود را تبلیغ کنید</a></li>
+                    <li><a href="#">نشر شخصی با ما</a></li>
+                    <li><a href="#">میزبان آمازون هاب شوید</a></li>
+                    <li><a href="#">مشاهده بیشتر کسب درآمد با ما</a></li>
+                </ul>
+            </div>
+            <div class="items">
+                <div class="header">محصولات پرداخت آمازون</div>
+                <ul class="text">
+                    <li><a href="#">بیزینس کارت آمازون</a></li>
+                    <li><a href="#">خرید با امتیاز</a></li>
+                    <li><a href="#">بارگیری موجودی حساب</a></li>
+                    <li><a href="#">مبدل ارز آمازون</a></li>
+                </ul>
+            </div>
+            <div class="items">
+                <div class="header">کمک به شما</div>
+                <ul class="text">
+                    <li><a href="#">آمازون و کوید 19</a></li>
+                    <li><a href="#">حساب شما</a></li>
+                    <li><a href="#">سفارشات شما</a></li>
+                    <li><a href="#">نرخ و سیاست های حمل و نقل</a></li>
+                    <li><a href="#">بازگشت و تعویض</a></li>
+                    <li><a href="#">مدیریت محتوا و دستگاه</a></li>
+                    <li><a href="#">دستیار آمازون</a></li>
+                    <li><a href="#">کمک به ما</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer-currency">
+        <div class="main">
+            <div class="logo"></div>
+            <div class="lang">
+                <div class="globe"></div>
+                <div class="farsi">فارسی
+                    <div class="menu">
+                            <ul>
+                                <li>
+                                    <span>تغییر زبان</span>
+                                    <a href="#" class="more">اطلاعات بیشتر</a>
+                                </li>
+                                <li>
+                                   <div class="radio-up"></div>
+                                   <label>انگلیسی - EN</label>
+                                </li>
+                            </ul>
+                            <div class="line"></div>
+
+                            <ul>
+                                <li>
+                                    <div class="radio"></div>
+                                    <a href="#">اسپانیایی - ES</a>
+                                </li>
+                                <li>
+                                    <div class="radio"></div>
+                                    <a href="#">عربی - AR</a>
+                                </li>
+                                <li>
+                                    <div class="radio"></div>
+                                    <a href="#">آلمانی - DE</a>
+                                </li>
+                                <li>
+                                    <div class="radio"></div>
+                                    <a href="#">فرانسوی - FR</a>
+                                </li>
+                                <li>
+                                    <div class="radio"></div>
+                                    <a href="#">اسپانیایی - ES</a>
+                                </li>
+                                <li>
+                                    <div class="radio"></div>
+                                    <a href="#">عربی - AR</a>
+                                </li>
+                                <li>
+                                    <div class="radio"></div>
+                                    <a href="#">آلمانی - DE</a>
+                                </li>
+                                <li>
+                                    <div class="radio"></div>
+                                    <a href="#">فرانسوی - FR</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="shapeup"></div>
+                </div>
+                <div class="arrow"></div>
+            </div>
+            <div class="money">
+                <span>$</span>
+                <span>آمریکا - دلار آمریکا</span>
+            </div>
+            <div class="country">
+                <div class="flag"></div>
+                <span>ایالت متحده</span>
+            </div>
+        </div>
+    </div>
+    <div id="footer-two">
+        <div class="main">
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="empty-items"></div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="items">
+                <a href="#" class="header">آمازون موزیک</a>
+                <a href="#" class="detail">گوش دادن میلیون ها موزیک</a>
+            </div>
+            <div class="empty-items"></div>
+        </div>
+    </div>
+    <div id="details">
+        <div class="main">
+            <a href="#">شرایط استفاده</a>
+            <a href="#">حریم شخصی</a>
+            <a href="#">تبلیغات</a>
+            <span>1996-2022 © آمازون دات کام و شرکت های وابسته</span>            
+        </div>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

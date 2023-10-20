@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face{font-family:'Amazon';
+src:url("img/fonts/Amazon Ember.woff2") format("woff2"),
+url("img/fonts/Amazon Ember.woff") format("woff")}
+
+body {
+	margin:0;
+	background:#eaeded;
+}
+
+#TopMenu {
+	border:1px solid #ccc;
+	height:99px;
+}
+
+#TopMenu > .TopMenuOne {
+	border:1px solid #ccc;
+	height:66px;
+}
+
+#slider {
+	position:relative;
+	//border:1px solid #ccc;
+	height:600px;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+#slider > #galery {
+	position:relative;
+	transition:0.3s;
+	width:400%;
+	height:100%;
+	left:0;
+}
+
+#slider > #galery > .items {
+	width:25%;
+	height:100%;
+	float:left;
+}
+
+#slider > #galery > .items > img {
+	width:100%;
+	height:100%;
+}
+
+#slider > #left {
+	position:absolute;
+	background:url("img/sliders/sliderOne/00.png") no-repeat 0 0;
+	background-size:70px;
+	top:100px;
+	height:45px;
+	width:25px;
+	margin-left:20px;
+}
+
+#slider > #right {
+	position:absolute;
+	background:url("img/sliders/sliderOne/00.png") no-repeat -45px 0;
+	background-size:70px;
+	top:100px;
+	right:20px;
+	height:45px;
+	width:25px;
+}
+
+#Boxes {
+	position:relative;
+	top:-350px;
+	border:1px solid #ccc;
+	height:2000px;
+}
+
+#Boxes > #BoxOne {
+	border:1px solid red;
+	height:880px;
+}
+
+#Boxes > #BoxOne > .right {
+	//border:1px solid red;
+	width:345px;
+	height:100%;
+	float:right;
+	margin-right:20px;
+}
+
+#Boxes > #BoxOne > .right > .signin {
+	background: #fff;
+	width:100%;
+	height:150px;
+}
+
+#Boxes > #BoxOne > .right > .signin > .signintext {
+	border:1px solid transparent;
+	height:75px;
+	width:85%;
+	margin:0 auto;
+	font-family:Amazon;
+	font-size:14px;
+}
+
+#Boxes > #BoxOne > .right > .signin > .signinbutton {
+	//border:1px solid red;
+	height:75px;
+	width:85%;
+	margin:0 auto;
+}
+
+#Boxes > #BoxOne > .right > .signin > .signinbutton > div:hover {
+	background: #fcd200;
+}
+
+#Boxes > #BoxOne > .right > .signin > .signinbutton > div {
+	background: #ffd814;
+	//border:1px solid red;
+	height:32px;
+	text-align:center;
+	line-height:30px;
+	margin:10px 0;
+	border-radius:8px;
+	cursor:pointer;
+	box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+	font-family:Amazon;
+	font-size:13px;
+}
+
+#Boxes > #BoxOne > .right > .ad {
+	margin:20px 0 0 5px;
+	background:url("img/bg/ad.jpg") no-repeat;
+	background-size:330px;
+	height:250px;
+}
+
+#Boxes > #BoxOne > .right > .shop {
+	border:1px solid red;
+	height:440px;
+	margin-top:20px;
+}
+
+#Boxes > #BoxOne > .left {
+	border:1px solid green;
+	width:950px;
+	height:100%;
+	float:left;
+}
+
+#Signin {
+	border:1px solid #ccc;
+	height:166px;
+}
+
+#Footer {
+	border:1px solid #ccc;
+	height:993px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="TopMenu">
+	<div class="TopMenuOne"></div>
+	<div class="TopMenuTwo"></div>
+</div>
+<div id="slider">
+	<div id="galery">
+		<div class="items">
+			<img src="img/sliders/sliderOne/01.jpg">
+		</div>
+		<div class="items">
+			<img src="img/sliders/sliderOne/02.jpg">
+		</div>
+		<div class="items">
+			<img src="img/sliders/sliderOne/05.jpg">
+		</div>
+		<div class="items">
+			<img src="img/sliders/sliderOne/04.jpg">
+		</div>
+	</div>
+	<div id="left"></div>
+	<div id="right"></div>
+</div>
+<div id="Boxes">
+	<div id="BoxOne">
+		<div class="left"></div>
+		<div class="right">
+			<div class="signin">
+				<div class="signintext">
+					<h2>Sign in for the best experience</h2>
+				</div>
+				<div class="signinbutton">
+					<div>Sign in securely</div>
+				</div>
+			</div>
+			<div class="ad"></div>
+			<div class="shop"></div>
+		</div>
+	</div>
+</div>
+<div id="Signin"></div>
+<div id="Footer"></div>
+<script>
+i = 0;
+right.onclick = function(){
+	if(i > -300){
+	i -= 100;
+	galery.style.left = i + "%";
+	}else{
+		i = 0;
+		galery.style.left = i + "%";
+	}
+}
+left.onclick = function(){
+	if(i < 0){
+	i += 100;
+	galery.style.left = i + "%";
+	}
+}
+</script>
+</body>
+</html>

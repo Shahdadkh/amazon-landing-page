@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face{font-family:'Amazon';
+src:url("img/fonts/Amazon Ember.woff2") format("woff2"),
+url("img/fonts/Amazon Ember.woff") format("woff")}
+
+body {
+	margin:0;
+	background: #eaeded;
+}
+
+#header {
+	//border:1px solid red;
+	height:100px;
+}
+
+#header > #topheader {
+	//border:1px solid red;
+	background:#131921;
+	height:60px;
+}
+
+#header > #downheader {
+	//border:1px solid red;
+	background:#232f3e;
+	height:39px;
+}
+
+#content {
+	//border:1px solid red;
+	height:2350px;
+}
+
+#content > #all {
+	//border:1px solid orange;
+	width:1341px;
+	height:100%;
+	margin:0 auto;
+}
+
+#content > #all > #slider {
+	position:relative;
+	//border:1px solid #ccc;
+	height:600px;
+	cursor:pointer;
+	overflow:hidden;
+}
+
+#content > #all > #slider > #galery {
+	position:relative;
+	transition:0.3s;
+	width:400%;
+	height:100%;
+	left:0;
+}
+
+#content > #all > #slider > #galery > .items {
+	width:25%;
+	height:100%;
+	float:left;
+}
+
+#content > #all > #slider > #galery > .items > img {
+	width:100%;
+	height:100%;
+}
+
+#content > #all > #slider > #left {
+	position:absolute;
+	background:url("../img/sliders/sliderOne/00.png") no-repeat 0 0;
+	background-size:70px;
+	top:100px;
+	height:45px;
+	width:25px;
+	margin-left:20px;
+}
+
+#content > #all > #slider > #right {
+	position:absolute;
+	background:url("../img/sliders/sliderOne/00.png") no-repeat -45px 0;
+	background-size:70px;
+	top:100px;
+	right:20px;
+	height:45px;
+	width:25px;
+}
+
+#content > #all > #boxes{
+	position:relative;
+	top:-350px;
+	//border:1px solid red;
+	width:100%;
+	height:1600px;
+}
+
+#content > #all > #boxes > #boxone {
+	//border:1px solid red;
+	width:100%;
+	height:880px;
+}
+
+#content > #all > #boxes > #boxone > .top {
+	//border:1px solid red;
+	width:100%;
+	height:420px;
+}
+
+#content > #all > #boxes > #boxone > .top > .items {
+	//border:1px solid red;
+	width:310px;
+	height:100%;
+	float:left;
+	margin-left:18px;
+	background: #fff;
+}
+
+#content > #all > #boxes > #boxone > .top > .signin {
+	border:1px solid red;
+	width:310px;
+	height:100%;
+	float:left;
+	margin-left:18px;
+	
+}
+
+#content > #all > #boxes > #boxone > .bottom {
+	//border:1px solid red;
+	width:100%;
+	height:420px;
+	margin-top:20px;
+}
+
+#content > #all > #boxes > #boxone > .bottom > .items {
+	//border:1px solid red;
+	width:310px;
+	height:100%;
+	float:left;
+	margin-left:18px;
+	background: #fff;
+}
+
+#content > #all > #boxes > #mini {
+	border:1px solid transparent;
+	width:1300px;
+	height:280px;
+	margin:25px auto;
+	background:#fff;
+}
+
+#content > #all > #boxes > #mini > p {
+	color:#0f1111;
+	font-family:Amazon;
+	font-size:21px;
+	font-weight:bold;
+	margin:18px 0 10px 18px;
+}
+
+#content > #all > #boxes > #mini > #ministyle {
+	position:relative;
+	//border:1px solid red;
+	width:1270px;
+	height:203px;
+	overflow:hidden;
+	margin:0 auto;
+}
+
+#content > #all > #boxes > #mini > #ministyle > #minileft {
+	position:absolute;
+	background:url("img/sliders/sliderTwo/00.png") no-repeat -15px 0;
+	background-size:150px;
+	width:15px;
+	height:26px;
+	top:90px;
+	left:13px;
+}
+
+#content > #all > #boxes > #mini > #ministyle > #miniright {
+	position:absolute;
+	background:url("img/sliders/sliderTwo/00.png") no-repeat 0 0;
+	background-size:150px;
+	width:15px;
+	height:26px;
+	top:90px;
+	right:13px;
+}
+
+#content > #all > #boxes > #mini > #ministyle > #minislider {
+	position:relative;
+	transition:0.5s;
+	//border:1px solid red;
+	width:5240px;
+	height:100%;
+	left:0;
+}
+
+#content > #all > #boxes > #mini > #ministyle > #minislider > .items {
+	height:100%;
+	float:left;
+	margin:0 8.5px 0 0;
+}
+
+#content > #all > #boxes > #mini > #ministyle > #minislider > .items > img {
+	height:auto;
+	width:auto;
+}
+
+#content > #all > #boxes > #boxtwo {
+	//border:1px solid red;
+	width:100%;
+	height:420px;
+}
+
+#content > #all > #boxes > #boxtwo > .up {
+	//border:1px solid red;
+	width:100%;
+	height:420px;
+}
+
+#content > #all > #boxes > #boxtwo > .up > .items {
+	//border:1px solid red;
+	width:310px;
+	height:100%;
+	float:left;
+	margin-left:18px;
+	background: #fff;
+}
+
+#content > #all > #boxes > #boxtwo > .down {
+	//border:1px solid red;
+	width:100%;
+	height:420px;
+	margin-top:20px;
+}
+
+#content > #all > #boxes > #boxtwo > .down > .items {
+	//border:1px solid red;
+	width:310px;
+	height:100%;
+	float:left;
+	margin-left:18px;
+	background: #fff;
+}
+
+#footer {
+	//border:1px solid red;
+	height:1200px;
+}
+
+#footer > #footersignin {
+	//border:1px solid red;
+	height:166px;
+	background:#fff;
+}
+
+#footer > #footerup {
+	//border:1px solid red;
+	height:550px;
+	background:#232f3e;
+}
+
+#footer > #footerdown {
+	//border:1px solid red;
+	height:490px;
+	background:#131a22;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+	<div id="topheader"></div>
+	<div id="downheader"></div>
+</div>
+<div id="content">
+	<div id="all">
+		<div id="slider">
+			<div id="galery">
+				<div class="items">
+					<img src="img/sliders/sliderOne/01.jpg">
+				</div>
+				<div class="items">
+					<img src="img/sliders/sliderOne/02.jpg">
+				</div>
+				<div class="items">
+					<img src="img/sliders/sliderOne/05.jpg">
+				</div>
+				<div class="items">
+					<img src="img/sliders/sliderOne/04.jpg">
+				</div>
+			</div>
+			<div id="left"></div>
+			<div id="right"></div>
+		</div>
+		<div id="boxes">
+			<div id="boxone">
+				<div class="top">
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="signin"></div>
+				</div>
+				<div class="bottom">
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+				</div>
+			</div>
+			<div id="mini">
+				<p>Top Sellers in Books for you</p>
+				<div id="ministyle">
+					<div id="minislider">
+						<div class="items">
+							<img src="img/sliders/sliderTwo/01.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/02.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/03.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/04.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/05.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/06.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/07.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/08.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/09.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/10.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/11.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/12.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/13.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/14.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/15.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/16.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/17.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/18.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/19.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/20.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/21.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/22.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/23.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/24.jpg"></img>
+						</div>
+						<div class="items">
+							<img src="img/sliders/sliderTwo/25.jpg"></img>
+						</div>
+					</div>
+					<div id="minileft"></div>
+					<div id="miniright"></div>
+				</div>
+			</div>
+			<div id="boxtwo">
+				<div class="up">
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+				</div>
+				<div class="down">
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div id="footersignin"></div>
+	<div id="footerup"></div>
+	<div id="footerdown"></div>
+</div>
+<script>
+mi = 0;
+miniright.onclick = function(){
+  if (mi == 0) {
+    mi -= 1105;
+    minislider.style.left = mi + "px";
+  } else if (mi == -1105) {
+    mi -= 1020;
+    minislider.style.left = mi + "px";
+  } else if (mi == -2125) {
+    mi -= 1200;
+    minislider.style.left = mi + "px";
+  } else if (mi == -3325){
+    mi -= 430;
+    minislider.style.left = mi + "px";
+  }else if (mi == -2605){ 
+    mi -= 1150;
+    minislider.style.left = mi + "px";
+  }else if (mi == -1585){ 
+    mi -= 1020;
+    minislider.style.left = mi + "px"; 
+  }else if (mi == -495){
+    mi = -1585;
+    minislider.style.left = mi + "px";
+  }
+}
+
+minileft.onclick = function(){
+  if (mi == -3755) {
+    mi += 1150;
+    minislider.style.left = mi + "px";
+  } else if (mi == -2605){ 
+    mi += 1020;
+    minislider.style.left = mi + "px";
+  }else if (mi == -1585){ 
+    mi += 1090;
+    minislider.style.left = mi + "px"; 
+  } else if (mi == -495){
+    mi = 0;
+    minislider.style.left = mi + "px";
+  } else if (mi == -1105){
+    mi = 0;
+    minislider.style.left = mi + "px";
+  } else if (mi == -2125) {
+    mi += 1020;
+    minislider.style.left = mi + "px";
+  } else if (mi == -3325){
+    mi += 1200;
+    minislider.style.left = mi + "px";
+	}
+}
+
+i = 0;
+right.onclick = function(){
+	if(i > -300){
+	i -= 100;
+	galery.style.left = i + "%";
+	}else{
+		i = 0;
+		galery.style.left = i + "%";
+	}
+}
+left.onclick = function(){
+	if(i < 0){
+	i += 100;
+	galery.style.left = i + "%";
+	}
+}
+</script>
+</body>
+</html>
